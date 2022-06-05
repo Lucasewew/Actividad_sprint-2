@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisor de Gastos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="bg-dark">
+        <h1 class="text-white p-5">Divisor de Gastos</h1>
+    </header>
+    <main class="d-flex align-items-center justify-content-center vw-100">
+        <div class="row m-1">
+            <div class="row p-1">
+                <div class="col-12">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <form class=" d-flex">
+                                <input type="text" id="nombre" class="form-control m-1" placeholder="Nombre">
+                                <input type="number" id="pago" class="form-control m-1" placeholder="¿Cuánto gastaste?">
+                                <button type="button" class="btn btn-light m-1" onclick="repartir()">Agregar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 p-1">
+                    <div class="card bg-dark">
+                        <div class="card-body overflow-auto">
+                            <ul id="list-group" class="list-group"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row p-1">
+                        <div class="card bg-dark">
+                            <div class="card-body">
+                                <div>
+                                    <p class="text-white">El total es:</p>
+                                </div>
+                                <div id="total" type="number" class="text-white h1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="card bg-dark">
+                            <div class="card-body">
+                                <div>
+                                    <p class="text-white">Cada uno debe aportar:</p>
+                                </div>
+                                <div id="aporte-individual" type="number" class="text-white h1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+</body>
+
+</html>
